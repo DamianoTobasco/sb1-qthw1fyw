@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta httpequiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- PWA primary color -->
+  <meta name="theme-color" content="#000000" />
+  <title>Evolve Health App</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+    }
+
+    #root {
+      height: 100%;
+      display: flex;
+    }
+
+    /* Avoid FOUC (Flash of Unstyled Content) */
+    body {
+      background-color: #000000;
+      color: #ffffff;
+    }
+
+    /* Hide Spline watermark */
+    .spline-watermark {
+      display: none !important;
+      opacity: 0 !important;
+      visibility: hidden !important;
+    }
+
+    /* Audio player sound wave animation */
+    @keyframes sound-wave {
+      0% {
+        height: 3px;
+      }
+      100% {
+        height: 10px;
+      }
+    }
+
+    /* Apply animations to the bars */
+    .bar1 {
+      animation: sound-wave 0.5s infinite alternate ease-in-out;
+    }
+
+    .bar2 {
+      animation: sound-wave 0.5s infinite alternate ease-in-out;
+      animation-delay: 0.2s;
+    }
+
+    .bar3 {
+      animation: sound-wave 0.5s infinite alternate ease-in-out;
+      animation-delay: 0.4s;
+    }
+  </style>
+  <!-- Preload Spline Viewer -->
+  <link rel="preload" href="https://unpkg.com/@splinetool/viewer@1.9.71/build/spline-viewer.js" as="script" />
+
+  <!-- Apple PWA meta tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
