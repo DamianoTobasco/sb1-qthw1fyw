@@ -1,0 +1,23 @@
+/* Add this to your global CSS file */
+@keyframes sound-wave {
+  0% {
+    height: 3px;
+  }
+  100% {
+    height: 10px;
+  }
+}
+
+.bar1 {
+  animation: sound-wave 0.5s infinite alternate ease-in-out;
+}
+
+.bar2 {
+  animation: sound-wave 0.5s infinite alternate ease-in-out;
+  animation-delay: 0.2s;
+}
+
+.bar3 {
+  animation: sound-wave 0.5s infinite alternate ease-in-out;
+  animation-delay: 0.4s;
+}
